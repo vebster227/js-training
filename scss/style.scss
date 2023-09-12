@@ -1,8 +1,6 @@
-@import "reset.css"; 
+@import "_reset";
 
-.hidden {
-    display: none;
-}
+
 
 html,
 body {
@@ -68,7 +66,7 @@ li{
 }
 
 
- /* Practice 2 */ */
+
  * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -87,7 +85,8 @@ a {
     padding: 50px;
 }
 
-
+.posts-list {
+}
 .posts-list-item {
     position: relative;
     display: flex;
@@ -111,7 +110,8 @@ a {
     border-radius: 100%;
     background-color: lightgreen;
 }
-
+.post-title {
+}
 .post-text {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -123,4 +123,4 @@ a {
 .post-link {
     text-align: center;
     color: cornflowerblue;
-}
+} 
