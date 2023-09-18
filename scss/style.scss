@@ -1,5 +1,6 @@
 @import "_reset";
-
+//змінна в Scss
+$dark-pink: #6b084f;
 
 
 html,
@@ -98,27 +99,33 @@ a {
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.post-index {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: lightgreen;
+.post {
+    &-index {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: lightgreen;
+        }
+    &-title{}
+    &-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: normal;
+        white-space: normal;
+        }
 }
 .post-title {
 }
 .post-text {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: normal;
-    white-space: normal;
+    
 }
 .post-link {
     text-align: center;
