@@ -872,3 +872,93 @@ const myNumber = 42
 //     }
 
 // renderSquares(lottoCards);
+
+// this keyword
+
+// 1
+// console.log(this)
+
+// 2
+
+// function showThis() {
+//     console.log(this)
+// }
+
+// 3
+
+    // const obj = {
+    //     name: "John Doe",
+    //     showThis() {
+    //         console.log(this)
+    //     }
+    // }
+    // obj.showThis();
+
+// 4
+
+// function Person(name) {
+//     this.name = name;
+//     this.sayHello = function () {
+//         console.log(`Hi! My name is ${this.name}`);
+//     };
+// }
+// const person = new Person('Alice');
+// person.sayHello();
+
+// 5
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     showThis() {
+//         console.log(`hello, ${this.name}`);
+//     }
+// }
+// const person1 = new Person("Bob");
+// person.showThis();
+// console.log(person1);
+
+// 6 
+
+// const obj = {
+//     sayHello() {
+//         function inner() {
+//             console.log(this)
+//         }
+//         inner();
+//     },
+//     sayHelloArrow() {
+//         const inner = () => {
+//             console.log(this);
+//         };
+//         inner();
+//     },
+
+// };
+// obj.sayHello();
+// obj.sayHelloArrow();
+
+// 7
+
+// const obj1 = {name: "Ivan", age: 18};
+
+// const obj2 = {
+//     sayHello(a, b, c) {
+//         console.log(a, b, c)
+//         console.log(this.age);
+//     }
+// }
+
+// obj2.sayHello();
+// obj2.sayHello.call(obj1, 1, 2, 3);
+// obj2.sayHello.bind(obj1, [1, 2, 3]);
+
+// 8
+
+// const obj1 = {name: "Ivan", age: 18}
+// function sayHello() {
+//     console.log(this.name);
+// }
+// const updatedContextSayhello = sayHello.bind(obj1);
+// updatedContextSayhello();
