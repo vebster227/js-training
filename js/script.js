@@ -696,7 +696,7 @@
 
 
 
-///////////////////////////////
+/////////////////////////////
 
 
 // function sum(numbers) {
@@ -706,7 +706,7 @@
 //         return accumulator + number;
 //     }, 0);
 //     return total;
-    
+
 // }
 // sum([1, 2 , 3])
 
@@ -722,7 +722,7 @@
 // Localstorage
 
 
-const myNumber = 42
+// const myNumber = 42
 
 // localStorage.removeItem('number')
 // console.log(localStorage.getItem('number'));
@@ -886,13 +886,13 @@ const myNumber = 42
 
 // 3
 
-    // const obj = {
-    //     name: "John Doe",
-    //     showThis() {
-    //         console.log(this)
-    //     }
-    // }
-    // obj.showThis();
+// const obj = {
+//     name: "John Doe",
+//     showThis() {
+//         console.log(this)
+//     }
+// }
+// obj.showThis();
 
 // 4
 
@@ -962,3 +962,39 @@ const myNumber = 42
 // }
 // const updatedContextSayhello = sayHello.bind(obj1);
 // updatedContextSayhello();
+//closures
+// function create(password) {
+//     // Основна функція create() повертає анонімну функцію
+//     return function (inputPassword) {
+//         // Анонімна функція порівнює аргумент зовнішньої функції з password
+//         return inputPassword === password;
+//     };
+// }
+
+// Створюємо функцію для "Tom" з паролем "pass_for_Tom"
+// const tom = create("pass_for_Tom");
+
+// Викликаємо анонімну функцію, створену для "Tom" з паролем "pass_for_Tom"
+// const isTomPasswordCorrect = tom("pass_for_Tom");
+// console.log(tom); // true
+
+// // isTomPasswordCorrect має бути true, якщо пароль правильний
+// console.log(isTomPasswordCorrect);
+
+const array = ["iavn", 2, "3", 4]
+console.log(...array)
+// function findOdd(A) { //codewars
+//     let count = 0;
+//     let arr = A.sort((a, b) => a - b);
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[i] == arr[j]) {
+//                 count++;
+//             }
+//         }
+//         if (count % 2 !== 0) {
+//             return arr[i];
+//         }
+//     }
+// }
+// findOdd([4,5,5,5,7,8,9,9,4,5,8])
